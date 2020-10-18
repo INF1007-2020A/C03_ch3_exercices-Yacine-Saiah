@@ -11,12 +11,11 @@ def average(a: float, b: float, c: float) -> float:
 
 
 def to_radians(angle_degs: float, angle_mins: float, angle_secs: float) -> float:
-    return (angle_degs + (angle_mins + angle_secs/60)/60) * pi/180   
+    return (angle_degs + (angle_mins + angle_secs/60)/60) * math.pi/180   
 
 
 def to_degrees(angle_rads: float) -> tuple:
-    return (angle = (angle_rads*360)/(2*math.pi)
-    degrees, minutes, seconds = math.int(angle),angle // 60 math.int(angle/3600)
+    return (angle_rads * (180/math.pi)), (angle_rads * ((60 * 180)/math.pi),(angle_rads * ((3600 * 180)/math.pi)
 
 
 def to_celsius(temperature: float) -> float:
